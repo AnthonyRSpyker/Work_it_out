@@ -6,7 +6,7 @@ This is a work-out tracking application. This application allows the user to log
 
 ## Supporting Technologies.
 
-## Cntributors to the page.
+## Contributors to the page.
 
 ## Interested in adding to the page?
 
