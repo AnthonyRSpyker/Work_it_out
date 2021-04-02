@@ -42,6 +42,12 @@ const WeightsSchema = new Schema({
     }
 });
 
+WeightsSchema.virtual("totalDuration").get(function() {
+    return this.exercises.reduce((duration, exercise) => {
+        return duration + exercise.duration
+    }, 0)
+})
+
 const Weights = mongoose.models("Weights", WeightsSchema);
 
 module.exports = Weights;
