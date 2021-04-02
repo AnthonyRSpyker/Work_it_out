@@ -33,3 +33,6 @@ db.Workout.create({})
     });
 });
 
+app.listen(PORT, () => {
+    console.log(`We be listnen' on port ${PORT}!`)
+});
