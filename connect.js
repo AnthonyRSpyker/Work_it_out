@@ -2,7 +2,7 @@ const { MongoClient } = require("mongodb");
 require('dotenv').config();
  
 // Replace the following with your Atlas connection string                                                                                                                                        
-const url = `mongodb+srv://${process.env.name}:${process.env.password}@clustername.mongodb.net/test?retryWrites=true&w=majority&useNewUrlParser=true&useUnifiedTopology=true`;
+const url = `mongodb+srv://${process.env.name}:${process.env.password}@cluster0.jkgb3.mongodb.net/test`;
 const client = new MongoClient(url);
 
 async function run() {
