@@ -1,4 +1,4 @@
-const mongoose = reguire("mongoose")
+const mongoose = require("mongoose")
 
 const Schema = mongoose.Schema;
  
@@ -48,6 +48,6 @@ WeightsSchema.virtual("totalDuration").get(function() {
     }, 0)
 })
 
-const Weights = mongoose.models("Weights", WeightsSchema);
+const Weights = mongoose.model("Weights", WeightsSchema);
 
 module.exports = Weights;
