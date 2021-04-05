@@ -20,8 +20,6 @@ app.use(express.static("public"));
 
 mongoose.connect(process.env.MONGODB_URI || `mongodb+srv://${process.env.NAME}:${process.env.PASSWORD}@cluster0.jkgb3.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`, { useNewUrlParser: true });
 
-
-
 //api routes
 app.post("/api/workouts", (req, res) => {
     db.Workout.create({})
